@@ -1,0 +1,42 @@
+<ion-view view-title="main module">
+  <!-- do you want padding? -->
+  <ion-content class="padding">
+
+    <!-- content goes here -->
+    <ion-list ng-if="!isFB">
+      <ion-item class="item item-divider">
+        This is your main template!
+      </ion-item>
+      <ion-item class="item item-icon">
+        Yeiiii!
+      </ion-item>
+    </ion-list>
+
+    <br>
+
+    <ion-list ng-if="isFB">
+      <ion-item class="item item-divider">
+        Loading from Facebook browser, aren't you!?
+      </ion-item>
+
+      <ion-item ng-repeat="item in ctrl.data.content">
+        {{item}}
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-assertive item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input
+        ng-focus="ctrl.resizeView('focus')"
+        ng-blur="ctrl.resizeView('blur')"
+        ng-change="ctrl.resizeView('change')"
+        type="search" placeholder="Search">
+    </label>
+    <button class="button button-clear">
+      Cancel
+    </button>
+  </ion-footer-bar>
+</ion-view>

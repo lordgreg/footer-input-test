@@ -21,4 +21,30 @@ $ionicons-font-path: "../assets/fonts" !default;
 // Include all of Ionic
 @import "../../bower_components/ionic/scss/ionic";
 
+html.facebook {
+  border: 2px solid green;
+}
 
+html.facebook, html.facebook > body {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+html.facebook {
+  body {
+    border: 2px solid green;
+  }
+}
+
+// html, body{
+//     position:fixed;
+//     top:0;
+//     left:0;
+//     right:0;
+//     bottom:0;
+// }
+// html, body, #outer-wrap {
+// }
