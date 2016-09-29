@@ -1,0 +1,16 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "Facebook browser footer input",
+      "appId": "com.mwaysolutions.facebooktest",
+      "ionicCss": false,
+      "bowerPackages": [],
+      "platforms": [
+        "ios"
+      ],
+      "plugins": [],
+      "appModule": "facebookBrowserFooterInput",
+      "ecosystems": []
+    }
+  }
+}
